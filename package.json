@@ -1,0 +1,25 @@
+{
+  "name": "redux_store_example",
+  "version": "1.0.0",
+  "description": "Voxxed Days 2018 Bucharest - Workshop demo code",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "webpack": "webpack --display-error-details"
+  },
+  "author": "Andrei Antal",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "9.4.7",
+    "@types/tapable": "1.0.0",
+    "@types/webpack": "4.1.1",
+    "awesome-typescript-loader": "5.0.0-1",
+    "html-webpack-plugin": "^3.0.6",
+    "source-map-loader": "0.2.3",
+    "ts-node": "5.0.1",
+    "typescript": "2.7.2",
+    "webpack": "4.1.1",
+    "webpack-cli": "2.0.12",
+    "webpack-dev-server": "3.1.1"
+  }
+}
