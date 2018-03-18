@@ -9,8 +9,8 @@ export interface Book {
 
 export function renderBooks(books: Book[]) {
   booksSummary.innerHTML = `There are ${books.length} books in your list`;
-  booksList.innerHTML = books.reduce((html, { title, author, read }, index) => {
-    return (
+  booksList.innerHTML = books.reduce(
+    (html, { title, author, read }, index) =>
       html +
       `
         <li>
@@ -18,7 +18,7 @@ export function renderBooks(books: Book[]) {
           <span class="${read ? 'crossed' : ''}">${title}, ${author}</span>
           <button data-index="${index}">Remove</button>
         </li>
-      `
-    );
-  }, '') as string;
+      `,
+    '',
+  ) as string;
 }

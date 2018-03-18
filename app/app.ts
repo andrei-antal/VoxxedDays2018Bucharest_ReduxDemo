@@ -19,8 +19,8 @@ booksList.addEventListener('click', event => {
 // add book
 bookForm.addEventListener('submit', event => {
   event.preventDefault();
-  const bookTitle = (bookForm.elements[0] as HTMLInputElement).value;
-  const bookAuthor = (bookForm.elements[1] as HTMLInputElement).value;
+  const bookTitle = (bookForm.elements[0] as HTMLInputElement).value.trim();
+  const bookAuthor = (bookForm.elements[1] as HTMLInputElement).value.trim();
 
   if (bookTitle !== '' && bookAuthor !== '') {
     //add book
