@@ -2,6 +2,9 @@ import * as helpers from './helpers';
 
 const booksList = document.getElementById('booksList') as HTMLUListElement;
 const bookForm = document.getElementById('bookForm') as HTMLFormElement;
+const unsubscribeBookStore = document.getElementById(
+  'unsubscribeBookStore',
+) as HTMLButtonElement;
 
 booksList.addEventListener('click', event => {
   const targetElement = event.target as HTMLElement;
